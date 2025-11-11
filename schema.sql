@@ -27,12 +27,12 @@ CREATE TABLE IF NOT EXISTS notifications (
 
 -- Seed sample drivers
 INSERT OR IGNORE INTO drivers(id, name, phone) VALUES
-	(1, 'Ayush Sharma', '785524441'),
-	(2, 'Vikas Kumar', '7852255562'),
-	(3, 'Vijay Kumar', '7452639654');
+	(1, 'vignesh', '9876543225'),
+	(2, 'Arun', '9087234578'),
+	(3, 'Madhavan', '7654238976');
 
 -- Seed sample deliveries
 INSERT OR IGNORE INTO deliveries(id, order_number, customer_name, address, status, estimated_delivery, updated_at, driver_id) VALUES
-	(1, '1', 'Vinay Ninave', 'Mahal Nagpur', 'Pending', NULL, datetime('now'), 1),
-	(2, '2', 'Aaliya Ali', 'Wadi Higana', 'Out for Delivery', NULL, datetime('now'), 2),
-	(3, '3', 'Piyush Lomte', 'Friend Colony', 'Delivered', NULL, datetime('now'), 3);
+	(1, '1', 'Nithish', 'Chennai', 'Pending', NULL, datetime('now'), 1),
+	(2, '2', 'Nalini', 'Coimbatore', 'Out for Delivery', NULL, datetime('now'), 2),
+	(3, '3', 'Kannan', 'Villupuram', 'Delivered', NULL, datetime('now'), 3);
