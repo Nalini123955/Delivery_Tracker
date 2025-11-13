@@ -47,7 +47,9 @@ for did, order_no, customer, address, status, eta, driver_id in DELIVERIES:
 			updated_at=excluded.updated_at,
 			driver_id=excluded.driver_id
 		""",
-		(did, order_no, customer, address, status, eta, now, driver_id)
+		(d
+		
+		id, order_no, customer, address, status, eta, now, driver_id)
 	)
 
 conn.commit()
